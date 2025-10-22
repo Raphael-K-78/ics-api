@@ -1,0 +1,45 @@
+# --- Environnements virtuels ---
+venv/
+.env/
+.venv/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# --- Logs et fichiers temporaires ---
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# --- Config / secrets ---
+*.env
+.env.*
+
+# --- Cache / build ---
+.cache/
+build/
+dist/
+.eggs/
+pip-wheel-metadata/
+site/
+
+# --- IDE / Éditeurs ---
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# --- Systèmes ---
+.DS_Store
+Thumbs.db

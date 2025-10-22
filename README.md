@@ -28,7 +28,7 @@ API créer avec **FastAPI** permettant de **télécharger, parser et filtrer des
 ### 1 - Cloner le repo
 
 ```bash
-git clone https://github.com/<ton-utilisateur>/ics-api.git
+git clone https://github.com/Raphael-K-78/ics-api.git
 cd ics-api
 ```
 
@@ -70,10 +70,11 @@ puis ouvre ton navigateur sur [127.0.0.1:8000](http://127.0.0.1:8000)
 
 ## Structure du Projet
 ics-api/
-├── main.py
-├── requirements.txt
 ├── .gitignore
+├── app.py
+├── LICENSE
 ├── README.md
+├── requirements.txt
 └── venv/ 
 
 ---
