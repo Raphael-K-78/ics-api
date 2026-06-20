@@ -19,7 +19,7 @@ API créer avec **FastAPI** permettant de **télécharger, parser et filtrer des
 | **fastapi** | Framework web asynchrone |
 | **uvicorn** | Serveur ASGI pour exécuter FastAPI |
 | **httpx** | Client HTTP asynchrone |
-| **ics** | Parsing des fichiers `.ics` |
+| **icalendar** | Parsing des fichiers `.ics` |
 
 ---
 
@@ -33,25 +33,25 @@ cd ics-api
 ```
 
 ### 2 - Créer et activer un environnement virtuel
-\_ Sous Linux / MacOS \_
+_Sous Linux / MacOS_
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
-\_ Sous Windows \_
+_Sous Windows_
 ```bash
 python3 -m venv venv
 venv\Scripts\activate
 ```
 
 ### 3 - Installer les dépendances
-\_ Avec Requirements.txt \_
+_Avec Requirements.txt_
 ```bash
 pip install -r requirements.txt
 ```
-\_ Sans Requirements.txt \_
+_Sans Requirements.txt_
 ```bash
-pip install fastapi uvicorn httpx ics
+pip install fastapi uvicorn httpx icalendar httpx
 ```
 
 ```bash
@@ -62,11 +62,24 @@ pip freeze > requirements.txt
 
 ## Execution locale
 ```
-uvicorn main:app --reload
+uvicorn app:app --reload
 ```
 puis ouvre ton navigateur sur [127.0.0.1:8000](http://127.0.0.1:8000)
 
 ---
+
+## Utilisation
+_Documentation_:
+[Lien de la documentation](http://127.0.0.1:8000/docs)
+_Requête_
+```
+http://127.0.0.1:8000/?url=https://url.ics.fr/fichier.ics&start_date=xxxx-xx-xx&end_date=xxxx-xx-xx
+```
+```
+http://127.0.0.1:8000/?url=https://url.ics.fr/fichier.ics
+```
+
+
 
 ## Structure du Projet
 ics-api/
